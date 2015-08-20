@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &159348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 466228}
+  - 114: {fileID: 11405052}
+  - 114: {fileID: 11421796}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &466228
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159348}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11405052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b645f85ad5ba340bf55cb9f8a5473d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testing: 1
+  gameOptions: {fileID: 0}
+  gameMusic: {fileID: 0}
+  gameLoca: {fileID: 0}
+  gameInput: {fileID: 0}
+  sceneTransition: {fileID: 0}
+  version: 0
+  playerStartLivepoints: 5
+  playerStartScore: 0
+  enemySpawnPoint: {fileID: 0}
+  pointsPerLPDamage: 100
+  playerPrototype: {fileID: 140920, guid: c18ea947307333941b543adfe8cf3f5c, type: 2}
+  maxEnemySpawnCount: 5
+  minEnemySpawnTime: 0
+  maxEnemySpawnTime: 5
+--- !u!114 &11421796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254753f9a7b549c47ab5b5c1e94ab64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gestureHandlers: []
+  keyMappings:
+  - keyMode: 0
+    keyCode: 275
+    name: InputRight
+    isTap: 0
+    swipeDirection: 2
+    relativeScreenRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1000
+      height: 1000
+  - keyMode: 0
+    keyCode: 276
+    name: InputLeft
+    isTap: 0
+    swipeDirection: 1
+    relativeScreenRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1000
+      height: 1000
+  - keyMode: 0
+    keyCode: 32
+    name: Shoot
+    isTap: 0
+    swipeDirection: 0
+    relativeScreenRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1000
+      height: 1000
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: possibleEnemyWeaponList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: minEnemySpawnTimeDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxEnemySpawnTimeDistance
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: playerStartLivepoints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: enemyPrototype
+      value: 
+      objectReference: {fileID: 180482, guid: f118752329d867a46b7a96254ddf355a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 159348}
+  m_IsPrefabParent: 1
