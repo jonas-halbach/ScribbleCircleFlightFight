@@ -74,9 +74,25 @@ public class Input : GameComponent<GameLogic> {
 
         UnityGameBase.Game.Instance.gameInput.KeyUp += gameInput_KeyUp;
         UnityGameBase.Game.Instance.gameInput.KeyDown += gameInput_KeyDown;
+        UnityGameBase.Game.Instance.gameInput.SwipeEvent += gameInput_SwipeEvent;
+
 
         //UnityGameBase.Game.Instance.gameInput.KeyUp += gameInput_KeyUp;
         
+    }
+
+    void gameInput_SwipeEvent(TouchInformation touchInfo) {
+        TouchInformation.ESwipeDirection swipeDirection = touchInfo.GetSwipeDirection();
+
+        if (swipeDirection == TouchInformation.ESwipeDirection.Right) {
+            ICommand moveCommand = new MoveCommand(Direction.right);
+            moveCommand.Execute(toControl);
+        }
+
+        if (swipeDirection == TouchInformation.ESwipeDirection.Left) {
+            ICommand moveCommand = new MoveCommand(Direction.left);
+            moveCommand.Execute(toControl);
+        }
     }
 
    
