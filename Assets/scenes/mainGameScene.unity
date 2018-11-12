@@ -87,6 +87,56 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &354510346 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 159348, guid: 287506d42d376cd40b21713a658df0f9, type: 2}
+  m_PrefabInternal: {fileID: 1123730639}
+--- !u!114 &354510347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 354510346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112e16e54bdfbad4383423fe380d275c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gestureHandlers: []
+  keyMappings:
+  - keyMode: 0
+    keyCode: 275
+    name: InputRight
+    isTap: 1
+    swipeDirection: 2
+    relativeScreenRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1000
+      height: 1000
+  - keyMode: 0
+    keyCode: 0
+    name: 
+    isTap: 0
+    swipeDirection: 0
+    relativeScreenRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  - keyMode: 0
+    keyCode: 0
+    name: 
+    isTap: 0
+    swipeDirection: 0
+    relativeScreenRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
 --- !u!1001 &593395477
 Prefab:
   m_ObjectHideFlags: 0
@@ -284,7 +334,8 @@ Prefab:
       propertyPath: playerPrototype
       value: 
       objectReference: {fileID: 168046, guid: 9b5a3f38e8a3afb48953fb74f88a7e51, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11421796, guid: 287506d42d376cd40b21713a658df0f9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 287506d42d376cd40b21713a658df0f9, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1247054576
